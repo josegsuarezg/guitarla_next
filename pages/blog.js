@@ -1,11 +1,11 @@
 import Entrada from "../components/Entrada";
-import Layouts from "../components/Layouts"
+import Layout from "../components/Layout"
 import styles from "../styles/Blog.module.css"
 
 const blog = ({entradas}) => {
   
   return (
-    <Layouts pagina='Nosotros'>
+    <Layout pagina='Nosotros'>
       <main className="contenedor">
         <h1 className="heading">Blog</h1>
         
@@ -18,7 +18,7 @@ const blog = ({entradas}) => {
           ))}
         </div>
       </main>
-    </Layouts>
+    </Layout>
   )
 }
 

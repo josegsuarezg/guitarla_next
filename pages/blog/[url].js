@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Layouts from "../../components/Layouts"
+import Layout from "../../components/Layout"
 import styles from '../../styles/EntradaId.module.css';
 import { formatearFecha } from '../../helpers';
 
@@ -8,7 +8,7 @@ const EntradaBlog = ({entrada}) => {
   const {titulo, contenido, imagen, published_at} = entrada
   
   return (
-    <Layouts pagina={titulo}>
+    <Layout pagina={titulo}>
       <main className='contenedor'>
         <h3 className='heading'> {titulo }</h3>
         <article className={styles.entrada}>
@@ -19,7 +19,7 @@ const EntradaBlog = ({entrada}) => {
           </div>
         </article>
       </main>
-    </Layouts>
+    </Layout>
   )
 }
 

@@ -7,7 +7,7 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 3fr;
     justify-content: center;
     align-items: center;
   }
@@ -15,10 +15,10 @@
 
 .contenido {
   color: var(--blanco);
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   overflow: hidden;
 }
 .enlace {
@@ -36,7 +36,22 @@
   transition-duration: .3s;
 }
 
+@media (min-width: 768px) {
+  .enlace {
+    width: 70%;
+    margin: 2rem auto 0 auto;
+  }
+}
+
 .enlace:hover {
   background-color: var(--primary);
   color: var(--blanco);
+}
+
+.heading_home {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--primary);
+  margin: 0;
 }

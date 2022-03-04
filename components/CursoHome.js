@@ -9,9 +9,9 @@ const CursoHome = ({cursoHome}) => {
     <section>
       <div className={`contenedor ${styles.grid}`}>
         <div>
-          <h2 className="heading">{nombre}</h2>
         </div>
         <div>
+          <h2 className={styles.heading_home}>{nombre}</h2>
           <p className={styles.contenido}>{descripcion}</p>
           <Link href="/listadocursos">
             <a className={styles.enlace}>Mas Información</a>
@@ -21,7 +21,7 @@ const CursoHome = ({cursoHome}) => {
       
       <style jsx>{`
         section {
-          padding: 10rem 0;
+          padding: 5rem 0;
           margin-top: 10rem;
           background-image: linear-gradient(to right, rgb(0 0 0 / .65), rgb(0 0 0 / .7)), url(${imagen.url});
           background-size: cover;

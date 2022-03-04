@@ -1,4 +1,4 @@
-import Layout from '../components/Layouts';
+import Layout from '../components/Layout';
 import Listado from '../components/Listado';
 import CursoHome from '../components/CursoHome';
 import ListadoBlog from '../components/ListadoBlog';

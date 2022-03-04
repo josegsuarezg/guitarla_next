@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Layout from '../../components/Layouts';
+import Layout from '../../components/Layout';
 import styles from '../../styles/Producto.module.css';
 
 const Producto = ({producto}) => {

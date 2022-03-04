@@ -1,10 +1,10 @@
 import Image from "next/image"
-import Layouts from "../components/Layouts"
+import Layout from "../components/Layout"
 import styles from '../styles/Nosotros.module.css'
 
 const nosotros = () => {
   return (
-    <Layouts pagina='Nosotros'>
+    <Layout pagina='Nosotros'>
       <main className="contenedor">
         <h2 className="heading">Nosotros</h2>
         <div className={styles.contenido}>
@@ -15,7 +15,7 @@ const nosotros = () => {
           </div>
         </div>
       </main>
-    </Layouts>
+    </Layout>
   )
 }
 

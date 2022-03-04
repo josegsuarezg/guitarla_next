@@ -1,8 +1,10 @@
 .header {
   background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url('../public/img/header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
   padding: 5rem 0;
+  position: relative;
 }
 
 .barra {
@@ -21,26 +23,148 @@
 .navegacion {
   margin-top: 5rem;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
 
 }
 
 @media (min-width: 768px) {
   .navegacion {
-    margin-top: 0;
+    flex-direction: row;
   }
 }
 
 .navegacion a {
   color: var(--blanco);
   text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
+  font-size: 1.4rem;
+  display: block;
   transition-property: color;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
 .navegacion a:hover {
   color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    margin-top: 0;
+  }
+  .navegacion a{
+    font-size: 1.8rem;
+  }
+}
+
+.modelo {
+    color: var(--blanco);
+  
+}
+
+@media (min-width: 768px) {
+  .modelo {
+    width: 560px;
+    margin-left: 5rem;
+  }
+  
+  
+}
+
+.modelo h2 {
+  font-weight: 700;
+  color: var(--blanco);
+  font-size: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+    .modelo h2 {
+    font-size: 6.5rem;
+    margin: 3.5rem 0 ;
+    text-align: left;
+  }
+}
+
+.modelo p {
+  margin: 1rem 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.precio {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .precio {
+    
+  text-align: left;
+  }
+}
+
+.enlace {
+  margin-top: 2rem;
+  border: var(--primary) solid 1.5px;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--blanco);
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+
+@media (min-width: 768px) {
+  .enlace {
+  width: 25rem;
+  }
+}
+
+
+.enlace:hover {
+  background-color: var(--primary);
+  color: var(--blanco);
+}
+
+.guitarra {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .guitarra {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation-name: mostrarImagen;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+  }
+}
+
+
+@keyframes mostrarImagen {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
