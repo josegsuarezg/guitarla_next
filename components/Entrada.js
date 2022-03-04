@@ -6,11 +6,18 @@ import styles from '../styles/Entrada.module.css';
 
 const Entrada = ({entrada}) => {
   
-  const {titulo, resumen, imagen, published_at, id, url} = entrada
+  const {titulo, resumen, imagen, published_at, url} = entrada
   
   return (
     <article className={styles.contenido}>
-      <Image priority="true" layout='responsive' width={800} height={600} src={imagen.url} alt={`imagen blog ${titulo}`} />
+      <Image 
+        priority="true" 
+        layout='responsive' 
+        width={800} 
+        height={600} 
+        src={imagen.url} 
+        alt={`imagen blog ${titulo}`} 
+      />
     
       <h3> {titulo }</h3>
       <p className={styles.fecha}>{formatearFecha(published_at)}</p>
@@ -19,7 +26,6 @@ const Entrada = ({entrada}) => {
       <Link href={`/blog/${url}`}>
         <a className={styles.enlace}>Leer Entrada</a>
       </Link>
-      
     </article>
   )
 }

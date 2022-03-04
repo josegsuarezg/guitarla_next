@@ -2,10 +2,9 @@ import Image from "next/image";
 import styles from "../styles/Nosotros.module.css"
 import {formatearFecha} from "../helpers";
 
-
-
 const Curso = ({curso}) => {
-  const {imagen, nombre, descripcion, fecha_inicio, fecha_fin, url, id} = curso;
+  
+  const { imagen, nombre, descripcion, fecha_inicio, fecha_fin } = curso;
   
   return (
     <section className={`contenedor ${styles.principal}`}>
@@ -18,7 +17,6 @@ const Curso = ({curso}) => {
           src={imagen.url}
           alt={`Imagen entrada ${nombre}`}
         />
-        
         <div>
           <h2 className={styles.titulo}>{nombre}</h2>
           <p>{descripcion}</p>

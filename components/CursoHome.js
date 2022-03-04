@@ -3,9 +3,7 @@ import styles from "../styles/CursoHome.module.css"
 
 const CursoHome = ({cursoHome}) => {
   
-  console.log(cursoHome);
   const {nombre, descripcion, imagen} = cursoHome[0]
-  
   
   return (
     <section>

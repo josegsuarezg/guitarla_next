@@ -28,7 +28,6 @@ export default function Home({guitarras, cursoHome, entradas}) {
 }
 
 export async function getServerSideProps() {
-  
   const urlGuitarras = `${process.env.API_URL}/guitarras?_limit=6`;
   const urlCurso = `${process.env.API_URL}/listadocursos`;
   const urlBlog = `${process.env.API_URL}/blogs?_limit=3&_sort=created_at:desc`;

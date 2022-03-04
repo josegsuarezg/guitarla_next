@@ -48,7 +48,6 @@ const Producto = ({producto}) => {
 
 
 export async function getServerSideProps({query:{url}}) {
-  
   const urlApi = `${process.env.API_URL}/guitarras/?url=${url}`
   const respuesta = await fetch(urlApi);
   const producto = await respuesta.json();

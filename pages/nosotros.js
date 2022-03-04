@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Layouts from "../components/Layouts"
-
 import styles from '../styles/Nosotros.module.css'
 
 const nosotros = () => {

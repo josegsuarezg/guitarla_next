@@ -6,8 +6,7 @@ const ListadoCursos = ({cursos}) => {
     <Layout>
       <main className="contenedor">
         <h2 className="heading">Cursos Disponibles</h2>
-        
-          <div>
+        <div>
           {cursos.map(curso => (
             <Curso
               key={curso.id}
