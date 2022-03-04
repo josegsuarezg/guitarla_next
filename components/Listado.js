@@ -6,7 +6,7 @@ const Listado = ({guitarras}) => {
     <div className={styles.grid}>
       {guitarras.map(guitarra => (
         <Guitarra
-          key={guitarra.id}
+          key={guitarra.url}
           guitarra={guitarra}
         />
       ))}

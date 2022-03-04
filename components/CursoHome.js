@@ -3,7 +3,7 @@ import styles from "../styles/CursoHome.module.css"
 
 const CursoHome = ({cursoHome}) => {
   
-  const {nombre, descripcion, imagen} = cursoHome[0]
+  const {nombre, descripcion, imagen} = cursoHome[3]
   
   return (
     <section>
