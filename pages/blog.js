@@ -12,7 +12,7 @@ const blog = ({entradas}) => {
         <div className={styles.entradas}>
           {entradas.map(entrada => (
             <Entrada 
-              key={entrada.id}
+              key={entrada._id}
               entrada={entrada}
             />
           ))}

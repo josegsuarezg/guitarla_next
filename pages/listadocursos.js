@@ -9,7 +9,7 @@ const ListadoCursos = ({cursos}) => {
         <div>
           {cursos.map(curso => (
             <Curso
-              key={curso.id}
+              key={curso._id}
               curso={curso} 
             />
           ))}
