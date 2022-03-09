@@ -41,8 +41,8 @@ function MyApp({ Component, pageProps }) {
       setCarrito(carritoActualizado);
   }
   
-  const eliminarProducto = _id => {
-    const carritoActualizado = carrito.filter(articulo => articulo._id !== _id)
+  const eliminarProducto = id => {
+    const carritoActualizado = carrito.filter(articulo => articulo.id !== id)
     setCarrito(carritoActualizado)
   }
   
