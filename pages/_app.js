@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const [carrito, setCarrito] = useState([]);
   
   useEffect(() => {
-    const carritoLS = JSON.parse(localStorage.getItem('carrito')) ?? []
+    const carritoLS = JSON.parse(localStorage.getItem('carrito')) ?? [];
     setCarrito(carritoLS);
   }, [])
   
@@ -18,9 +18,9 @@ function MyApp({ Component, pageProps }) {
   
   const agregarCarrito = producto => {
     
-    if(carrito.some( articulo => articulo._id === producto._id)) {
+    if(carrito.some( articulo => articulo.id === producto._id)) {
       const carritoActualizado = carrito.map(articulo => {
-        if(articulo._id === producto._id){
+        if(articulo.id === producto._id){
           articulo.cantidad = producto.cantidad
         }
         return articulo;
